@@ -12,21 +12,21 @@
     <title>Tạo Target Group và Load Balancer :: AWS System Manager</title>
 
     
-    <link href="/workshop1.github.io/css/nucleus.css?1724584319" rel="stylesheet">
-    <link href="/workshop1.github.io/css/fontawesome-all.min.css?1724584319" rel="stylesheet">
-    <link href="/workshop1.github.io/css/hybrid.css?1724584319" rel="stylesheet">
-    <link href="/workshop1.github.io/css/featherlight.min.css?1724584319" rel="stylesheet">
-    <link href="/workshop1.github.io/css/perfect-scrollbar.min.css?1724584319" rel="stylesheet">
-    <link href="/workshop1.github.io/css/auto-complete.css?1724584319" rel="stylesheet">
-    <link href="/workshop1.github.io/css/atom-one-dark-reasonable.css?1724584319" rel="stylesheet">
-    <link href="/workshop1.github.io/css/theme.css?1724584319" rel="stylesheet">
-    <link href="/workshop1.github.io/css/hugo-theme.css?1724584319" rel="stylesheet">
+    <link href="/workshop1.github.io/css/nucleus.css?1724585304" rel="stylesheet">
+    <link href="/workshop1.github.io/css/fontawesome-all.min.css?1724585304" rel="stylesheet">
+    <link href="/workshop1.github.io/css/hybrid.css?1724585304" rel="stylesheet">
+    <link href="/workshop1.github.io/css/featherlight.min.css?1724585304" rel="stylesheet">
+    <link href="/workshop1.github.io/css/perfect-scrollbar.min.css?1724585304" rel="stylesheet">
+    <link href="/workshop1.github.io/css/auto-complete.css?1724585304" rel="stylesheet">
+    <link href="/workshop1.github.io/css/atom-one-dark-reasonable.css?1724585304" rel="stylesheet">
+    <link href="/workshop1.github.io/css/theme.css?1724585304" rel="stylesheet">
+    <link href="/workshop1.github.io/css/hugo-theme.css?1724585304" rel="stylesheet">
     
-    <link href="/workshop1.github.io/css/theme-workshop.css?1724584319" rel="stylesheet">
+    <link href="/workshop1.github.io/css/theme-workshop.css?1724585304" rel="stylesheet">
     
     
 
-    <script src="/workshop1.github.io/js/jquery-3.3.1.min.js?1724584319"></script>
+    <script src="/workshop1.github.io/js/jquery-3.3.1.min.js?1724585304"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/workshop1.github.io/js/lunr.min.js?1724584319"></script>
-<script type="text/javascript" src="/workshop1.github.io/js/auto-complete.js?1724584319"></script>
+<script type="text/javascript" src="/workshop1.github.io/js/lunr.min.js?1724585304"></script>
+<script type="text/javascript" src="/workshop1.github.io/js/auto-complete.js?1724585304"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/dinhlam310.github.io\/workshop1.github.io\/\/vi";
     
 </script>
-<script type="text/javascript" src="/workshop1.github.io/js/search.js?1724584319"></script>
+<script type="text/javascript" src="/workshop1.github.io/js/search.js?1724585304"></script>
 
     
   </div>
@@ -1053,17 +1053,6 @@
               <div>
                 <div id="top-bar">
                 
-                  
-                  
-                  
-                  <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="workshop1.github.io/2-Prerequiste/2.1-architecture/2.1.2-createTG&amp;LB/_index.vi.md" target="blank">
-                      <i class="fas fa-code-branch"></i>
-                      <span id="top-github-link-text">Edit this page</span>
-                    </a>
-                  </div>
-                  
-                
                 
                 <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
                     <span id="sidebar-toggle-span">
@@ -1155,11 +1144,11 @@
 </li>
 <li>
 <p>Target group name : <strong>TG1</strong>
-<img alt="TG" src="/images/2.prerequisite/createTG.png"></p>
+<img alt="TG" src= "/workshop1.github.io/images/2.prerequisite/createTG.png"></p>
 </li>
 <li>
 <p>Mục <strong>VPC</strong> : Chọn <strong>ASG-ALB-vpc</strong>
-<img alt="TG" src="/images/2.prerequisite/createTG1.png"></p>
+<img alt="TG" src= "/workshop1.github.io/images/2.prerequisite/createTG1.png"></p>
 </li>
 <li>
 <p>Các phần còn lại chúng ta giữ nguyên và bấm next rồi tạo</p>
@@ -1172,11 +1161,11 @@
 </li>
 <li>
 <p>Tại phần <strong>Load balancer types</strong> : Chọn Application Load Balancer và bấm <strong>Create</strong>
-<img alt="LB" src="/images/2.prerequisite/createLB.png"></p>
+<img alt="LB" src= "/workshop1.github.io/images/2.prerequisite/createLB.png"></p>
 </li>
 <li>
 <p>Đặt tên là <strong>ALB1</strong>
-<img alt="LB" src="/images/2.prerequisite/createLB1.png"></p>
+<img alt="LB" src= "/workshop1.github.io/images/2.prerequisite/createLB1.png"></p>
 </li>
 <li>
 <p>Mục Network mapping:</p>
@@ -1185,12 +1174,12 @@
 <ul>
 <li>Chọn VPC là <strong>ASG-ALB-vpc</strong></li>
 <li>Chọn 2 Availability Zones , sau đó chọn 2 public subnet
-<img alt="LB" src="/images/2.prerequisite/createLB2.png"></li>
+<img alt="LB" src= "/workshop1.github.io/images/2.prerequisite/createLB2.png"></li>
 </ul>
 <ol start="5">
 <li>Tại phần <strong>Security group</strong> , xóa security group mặc định và chọn <strong>ALB-1</strong></li>
 <li>Tại mục <strong>Listeners and routing</strong>, chọn <strong>Default action</strong> là <strong>TG-1</strong>
-<img alt="LB" src="/images/2.prerequisite/createLB3.png"></li>
+<img alt="LB" src= "/workshop1.github.io/images/2.prerequisite/createLB3.png"></li>
 </ol>
 
 <div class="notices info" ><p>Lưu ý: Bộ cân bằng tải (Load balancer) định kỳ gửi ping, thử kết nối hoặc gửi yêu cầu để kiểm tra phiên bản EC2. Những thử nghiệm này được gọi là kiểm tra sức khỏe (health checks).</p>
@@ -1746,19 +1735,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/workshop1.github.io/js/clipboard.min.js?1724584319"></script>
-    <script src="/workshop1.github.io/js/perfect-scrollbar.min.js?1724584319"></script>
-    <script src="/workshop1.github.io/js/perfect-scrollbar.jquery.min.js?1724584319"></script>
-    <script src="/workshop1.github.io/js/jquery.sticky.js?1724584319"></script>
-    <script src="/workshop1.github.io/js/featherlight.min.js?1724584319"></script>
-    <script src="/workshop1.github.io/js/highlight.pack.js?1724584319"></script>
+    <script src="/workshop1.github.io/js/clipboard.min.js?1724585304"></script>
+    <script src="/workshop1.github.io/js/perfect-scrollbar.min.js?1724585304"></script>
+    <script src="/workshop1.github.io/js/perfect-scrollbar.jquery.min.js?1724585304"></script>
+    <script src="/workshop1.github.io/js/jquery.sticky.js?1724585304"></script>
+    <script src="/workshop1.github.io/js/featherlight.min.js?1724585304"></script>
+    <script src="/workshop1.github.io/js/highlight.pack.js?1724585304"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/workshop1.github.io/js/modernizr.custom-3.6.0.js?1724584319"></script>
-    <script src="/workshop1.github.io/js/learn.js?1724584319"></script>
-    <script src="/workshop1.github.io/js/hugo-learn.js?1724584319"></script>
+    <script src="/workshop1.github.io/js/modernizr.custom-3.6.0.js?1724585304"></script>
+    <script src="/workshop1.github.io/js/learn.js?1724585304"></script>
+    <script src="/workshop1.github.io/js/hugo-learn.js?1724585304"></script>
 
-    <link href="/workshop1.github.io/mermaid/mermaid.css?1724584319" rel="stylesheet" />
-    <script src="/workshop1.github.io/mermaid/mermaid.js?1724584319"></script>
+    <link href="/workshop1.github.io/mermaid/mermaid.css?1724585304" rel="stylesheet" />
+    <script src="/workshop1.github.io/mermaid/mermaid.js?1724585304"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
