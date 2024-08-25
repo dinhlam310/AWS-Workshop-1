@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Detection on AWS System Manager</title>
-    <link>/vi/4-wellarchitecture/4.2-security_pillar/4.2.3-detection/</link>
+    <link>https://dinhlam310.github.io/AWS-Workshop-1/vi/4-wellarchitecture/4.2-security_pillar/4.2.3-detection/</link>
     <description>Recent content in Detection on AWS System Manager</description>
     <generator>Hugo</generator>
     <language>vi</language>
-    <atom:link href="/vi/4-wellarchitecture/4.2-security_pillar/4.2.3-detection/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dinhlam310.github.io/AWS-Workshop-1/vi/4-wellarchitecture/4.2-security_pillar/4.2.3-detection/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

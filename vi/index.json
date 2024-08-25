@@ -1,223 +1,223 @@
 [
 {
-	"uri": "/vi/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/",
 	"title": "Workshop đầu tiên của tôi",
 	"tags": [],
 	"description": "",
 	"content": "First Cloud Journey - Workshop đầu tiên Tổng quan Trong bài workshop đầu tiên này, bạn sẽ tìm hiểu những kiến ​​thức cơ bản và thực hành cách triển khai một trang web đơn giản. Ngoài ra, bạn có thể tìm hiểu thêm về 6 trụ cột Well-Architecture .\nNội dung Giới thiệu Các bước chuẩn bị Dọn dẹp tài nguyên 6 trụ cột Well-Architecture "
 },
 {
-	"uri": "/vi/1-introduce/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/1-introduce/",
 	"title": "Giới thiệu",
 	"tags": [],
 	"description": "",
 	"content": "Trên không gian mạng , có vô số các trang web tĩnh/động được sử dụng hàng ngày , tuy nhiên không phải trang web nào cũng có 1 hệ thống có thiết kế đủ tốt để phòng ngừa , chống lại các hành vi không mong muốn xảy ra như : Sập trang web do số lượng người dùng đột biến , máy chủ bỗng dừng hoạt động , sử dụng hệ thống on-premise không đảm bảo.\nVới việc triển khai một trang web trên AWS, bạn sẽ có được những ưu điểm sau:\nCó thể xử lý , triển khai trang web nhanh cho người dùng cuối Khả năng bảo mật cao , chống lại sự tấn công của kẻ xấu Khả năng mở rộng dễ dàng , tự động theo lượng nhu cầu sử dụng của khách hàng Quản lý tập trung tài nguyên hệ thống , giao diện thân thiện \u0026hellip;.. Với những ưu điểm trên, tôi đã làm bài workshop này để hướng dẫn mọi người tận dụng các ưu điểm đó , phòng ngừa các hành vi trên để triển khai một trang web tĩnh . Hãy cùng mình đi tiếp vào phần sau để hiểu rõ về thiết kế hệ thống ra sao.\n"
 },
 {
-	"uri": "/vi/4-wellarchitecture/4.1-operational_excellence_pillar/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/4-wellarchitecture/4.1-operational_excellence_pillar/",
 	"title": "Operational excellence pillar",
 	"tags": [],
 	"description": "",
 	"content": "\rTrụ cột vận hành xuất sắc (Operational excellence pillar) tập trung vào việc vận hành và giám sát các hệ thống, đồng thời liên tục cải tiến các quy trình và thủ tục. Các chủ đề chính bao gồm tự động hóa các thay đổi, phản hồi các sự kiện và xác định các tiêu chuẩn để quản lý hoạt động hàng ngày.\nĐịnh nghĩa Amazon định nghĩa sự xuất sắc trong hoạt động là cam kết xây dựng phần mềm đúng cách trong khi vẫn luôn mang lại trải nghiệm tuyệt vời cho khách hàng. Nó bao gồm các phương pháp hay nhất để tổ chức nhóm của bạn, thiết kế khối lượng công việc của bạn, vận hành nó ở quy mô lớn và phát triển nó theo thời gian.\nMục tiêu Mục tiêu của sự xuất sắc trong hoạt động là đưa các tính năng mới và bản sửa lỗi đến tay khách hàng một cách nhanh chóng và đáng tin cậy. Trong quá trình này, sự xuất sắc trong hoạt động hướng đến tích hợp liên tục và phân phối liên tục (CI/CD).\nNguyên tắc thiết kế Tổ chức các nhóm xoay quanh kết quả kinh doanh\nTriển khai khả năng quan sát để có thông tin chi tiết có thể hành động\nTự động hóa an toàn khi có thể\nThực hiện các thay đổi thường xuyên, nhỏ và có thể đảo ngược\nThường xuyên tinh chỉnh các quy trình hoạt động\nDự đoán thất bại\nHọc hỏi từ mọi sự kiện và số liệu hoạt động\nSử dụng dịch vụ được quản lý\nTừ khóa dễ nhớ về nguyên tắc thiết kế của trụ cột vận hành xuất sắc :\nLàm nhóm CI/CD Liên tục cải tiến Trải nghiệm tốt Dự đoán dịch vụ kết quả Cam kết xây dựng Bốn lĩnh vực thực hành tốt nhất để đạt được sự xuất sắc trong hoạt động trên nền tảng đám mây: Tổ chức Chuẩn bị Vận hành Cải tiến Bạn có thể tìm đọc thêm trong tài liệu chính thức của AWS (Operational excellence pillar) tài liệu chính thức của AWS "
 },
 {
-	"uri": "/vi/4-wellarchitecture/4.1-operational_excellence_pillar/4.1.1-organization/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/4-wellarchitecture/4.1-operational_excellence_pillar/4.1.1-organization/",
 	"title": "Organization Area (Sự tổ chức)",
 	"tags": [],
 	"description": "",
 	"content": "Các thông tin chung của Organization Area mà mình đúc kết Sự ưu tiên và xác định nhu cầu Hiểu rõ công việc: Các nhóm cần hiểu rõ công việc của mình, mục tiêu chung và vai trò của từng thành viên để đặt ra ưu tiên hiệu quả. Đánh giá nhu cầu khách hàng: Cần xác định rõ nhu cầu của khách hàng (nội bộ và bên ngoài) để tập trung vào những việc quan trọng nhất. Tuân thủ quy định: Các nhóm cần tuân thủ các quy định và tiêu chuẩn của tổ chức và ngành. Đánh giá thường xuyên: Cần thường xuyên đánh giá lại ưu tiên để phù hợp với sự thay đổi của nhu cầu. Quản lý rủi ro Xác định rủi ro: Xác định và đánh giá các rủi ro tiềm ẩn có thể ảnh hưởng đến doanh nghiệp. Cân nhắc lợi ích và rủi ro: Cân nhắc kỹ lưỡng giữa các lợi ích và rủi ro khi đưa ra quyết định. Quản lý rủi ro: Có các biện pháp để quản lý và giảm thiểu rủi ro. Hiểu rõ vai trò và trách nhiệm Hiểu rõ vai trò: Mỗi nhóm cần hiểu rõ vai trò của mình trong việc đạt được mục tiêu chung của tổ chức. Làm việc nhóm: Các nhóm cần hợp tác và hỗ trợ lẫn nhau để đạt được hiệu quả cao nhất. Linh hoạt: Không có một mô hình làm việc duy nhất phù hợp cho tất cả các nhóm. "
 },
 {
-	"uri": "/vi/4-wellarchitecture/4.2-security_pillar/4.2.1-security_foundations/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/4-wellarchitecture/4.2-security_pillar/4.2.1-security_foundations/",
 	"title": "Security foundations",
 	"tags": [],
 	"description": "",
 	"content": "Chia sẻ trách nhiệm Trách nhiệm của AWS “Bảo mật của đám mây” – AWS chịu trách nhiệm bảo vệ cơ sở hạ tầng chạy tất cả các dịch vụ được cung cấp trong Đám mây AWS. Cơ sở hạ tầng này bao gồm phần cứng, phần mềm, mạng và cơ sở vật chất chạy các dịch vụ Đám mây AWS.\nTrách nhiệm của khách hàng “Bảo mật trên đám mây” – Trách nhiệm của khách hàng sẽ được xác định bởi các dịch vụ Đám mây AWS mà khách hàng lựa chọn. Điều này xác định khối lượng công việc cấu hình mà khách hàng phải thực hiện như một phần trách nhiệm bảo mật của họ\nQuản trị Quản trị an ninh, như một tập hợp con của cách tiếp cận tổng thể, nhằm hỗ trợ các mục tiêu kinh doanh bằng cách xác định các chính sách và mục tiêu kiểm soát để giúp quản lý rủi ro. Đạt được sự quản lý rủi ro bằng cách thực hiện theo cách tiếp cận theo từng lớp đối với các mục tiêu kiểm soát bảo mật – mỗi lớp được xây dựng dựa trên lớp trước đó. Dù bạn triển khai kiểm soát ở đâu thì mục tiêu đều giống nhau: quản lý rủi ro. Một loạt các khung quản lý rủi ro áp dụng cho các ngành, khu vực hoặc công nghệ cụ thể. Mục tiêu chính của bạn: nêu bật rủi ro dựa trên khả năng xảy ra và hậu quả Quản lý tài khoản AWS và sự phân chia AWS khuyên bạn nên sắp xếp khối lượng công việc trong các tài khoản riêng biệt và tài khoản nhóm dựa trên chức năng, yêu cầu tuân thủ hoặc một bộ kiểm soát chung thay vì phản ánh cấu trúc báo cáo của tổ chức bạn. Trong AWS, tài khoản là một ranh giới cứng nhắc. Ví dụ: bạn nên tách biệt cấp tài khoản để tách biệt khối lượng công việc sản xuất khỏi khối lượng công việc phát triển và thử nghiệm.\nQuản lý tài khoản tập trung: AWS Organizations tự động hóa việc tạo và quản lý tài khoản AWS cũng như kiểm soát các tài khoản đó sau khi chúng được tạo. Đặt các biện pháp kiểm soát tập trung: Kiểm soát những gì tài khoản AWS của bạn có thể thực hiện bằng cách chỉ cho phép các dịch vụ, Khu vực và hành động dịch vụ cụ thể ở cấp độ phù hợp. AWS Organizations cho phép bạn sử dụng các chính sách kiểm soát dịch vụ (SCP) để áp dụng các biện pháp bảo vệ quyền ở cấp tổ chức, đơn vị tổ chức hoặc tài khoản, áp dụng cho tất cả người dùng và vai trò AWS Identity and Access Management (IAM). Định cấu hình các dịch vụ và tài nguyên một cách tập trung: AWS Organizations giúp bạn định cấu hình các dịch vụ AWS áp dụng cho tất cả tài khoản của bạn. Ví dụ: bạn có thể định cấu hình tính năng ghi nhật ký tập trung cho tất cả các hành động được thực hiện trong tổ chức của mình bằng AWS CloudTrail và ngăn tài khoản thành viên hủy kích hoạt tính năng ghi nhật ký. Bạn cũng có thể tổng hợp dữ liệu tập trung cho các quy tắc mà bạn đã xác định bằng AWS Config, cho phép bạn kiểm tra khối lượng công việc của mình xem có tuân thủ hay không và phản ứng nhanh với các thay đổi. AWS CloudFormation StackSets cho phép bạn quản lý tập trung các ngăn xếp AWS CloudFormation trên các tài khoản và OU trong tổ chức của bạn. Điều này cho phép bạn tự động cung cấp tài khoản mới để đáp ứng các yêu cầu bảo mật của bạn. Các dịch vụ AWS, chẳng hạn như GuardDuty, Security Hub và AWS Config, hỗ trợ tích hợp với AWS Organizations, bao gồm cả việc chỉ định một tài khoản cụ thể cho các chức năng quản trị. "
 },
 {
-	"uri": "/vi/2-prerequiste/2.1-architecture/2.1.1-createvpcsg/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/2-prerequiste/2.1-architecture/2.1.1-createvpcsg/",
 	"title": "Tạo VPC , Subnet và Security Group ",
 	"tags": [],
 	"description": "",
 	"content": "Tạo VPC Hãy chắc chắn rằng bạn đang ở Vùng Singapore.\nTruy cập giao diện quản trị dịch vụ VPC Click Your VPC. Click Create VPC. Tại trang Create VPC. Tại mục Resouces to create chọn VPC and more Tại mục Name tag điền ASG-ALB-vpc. Tại mục IPv4 CIDR điền : 10.10.0.0/16 hoặc để mặc định là oke. Tại mục Number of Avaibility Zones chọn 2 Tại mục Number of public subnets chọn 2 Tại mục Number of private subnets chọn 2 Tại mục NAT gatewways chọn 0 Tại mục VPC endpoints chọn None Click Create VPC. Ta có thể cấu hình như hình ảnh bên dưới : Sau khi tạo xong VPC và các subnet , ta cần sửa lại 2 public subnet như sau : Chọn public subnet , mục Actions chọn Edit subnet settings Tích chọn ô Enable auto-assign public IPv4 address Bấm Save và làm tương tự với public subnet còn lại Nhiệm vụ 2: Tạo nhóm bảo mật (Security Group) Ta sẽ tạo 2 Security Group , đầu tiên là cho Load Balancer , thứ hai là cho các EC2 , ta sẽ nối Inbound SG của EC2 vào SG của Load Balancer\nHãy chắc chắn rằng bạn đang ở Vùng Singapore.\nĐiều hướng đến EC2 bằng cách nhấp vào menu Services có sẵn trong phần Compute.\nTrên menu bảng bên trái, chọn Security Groups trong phần Network \u0026amp; Security.\nNhấp vào nút Create security group.\nUnder Basic details:\nTên Security group: Nhập ALB-1 Description: nhập ALB-1 VPC: Chọn ASG-ALB-vpc mà chúng ta vừa tạo trước đó Bấm phần Add rule bên dưới phần Inbound rules Type : Chọn HTTP Source : Chọn Anywhere-IPv4 Để tất cả mọi thứ mặc định và bấm nút Create security group\nNhấp vào nút Create security group.\nTiếp theo ta tạo security group thứ 2 cho các máy ảo EC2\nUnder Basic details: Tên Security group: Nhập Web-1 Description: nhập Web-1 VPC: Chọn ASG-ALB-vpc mà chúng ta vừa tạo trước đó Bấm phần Add rule bên dưới phần Inbound rules Type : Chọn HTTP Source : Chọn Custom Ở ô tìm kiếm : gõ sg và chọn security group của ALB-1 Để tất cả mọi thứ mặc định và bấm nút Create security group "
 },
 {
-	"uri": "/vi/2-prerequiste/2.1-architecture/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/2-prerequiste/2.1-architecture/",
 	"title": "Tổng quan kiến trúc",
 	"tags": [],
 	"description": "",
 	"content": "Tổng quan kiến trúc sau khi các bạn hoàn tất các bước xây dựng hệ thống sẽ như sau:\nNội dung Tạo VPC, subnet và security group Tạo Target group và Load Balancer Tạo Launch template Tạo Auto Scaling Group Tạo IP Sets và Web ACLs Đọc Metric với Cloudwatch "
 },
 {
-	"uri": "/vi/4-wellarchitecture/4.2-security_pillar/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/4-wellarchitecture/4.2-security_pillar/",
 	"title": "Application security",
 	"tags": [],
 	"description": "",
 	"content": "Bảo mật ứng dụng (AppSec) mô tả quy trình tổng thể về cách bạn thiết kế, xây dựng và kiểm tra các thuộc tính bảo mật của khối lượng công việc bạn phát triển. Bạn nên có những người được đào tạo phù hợp trong tổ chức của mình, hiểu các đặc tính bảo mật của cơ sở hạ tầng xây dựng và phát hành cũng như sử dụng tính năng tự động hóa để xác định các vấn đề bảo mật.\nViệc áp dụng kiểm tra bảo mật ứng dụng như một phần thường xuyên trong vòng đời phát triển phần mềm (SDLC) và quy trình sau phát hành giúp đảm bảo rằng bạn có cơ chế có cấu trúc để xác định, khắc phục và ngăn chặn các sự cố bảo mật ứng dụng xâm nhập vào môi trường sản xuất của mình.\nPhương pháp phát triển ứng dụng của bạn phải bao gồm các biện pháp kiểm soát bảo mật khi bạn thiết kế, xây dựng, triển khai và vận hành khối lượng công việc của mình. Trong khi làm như vậy, hãy điều chỉnh quy trình để giảm thiểu lỗi liên tục và giảm thiểu nợ kỹ thuật. Ví dụ: sử dụng mô hình mối đe dọa trong giai đoạn thiết kế giúp bạn sớm phát hiện ra các lỗi thiết kế, giúp khắc phục chúng dễ dàng hơn và ít tốn kém hơn thay vì phải chờ đợi và giảm thiểu chúng sau này.\nChi phí và độ phức tạp để giải quyết các lỗi thường thấp hơn khi bạn sử dụng SDLC sớm hơn. Cách dễ nhất để giải quyết vấn đề là không có chúng ngay từ đầu, đó là lý do tại sao việc bắt đầu với mô hình mối đe dọa sẽ giúp bạn tập trung vào kết quả phù hợp từ giai đoạn thiết kế. Khi chương trình AppSec của bạn hoàn thiện, bạn có thể tăng số lượng thử nghiệm được thực hiện bằng cách sử dụng tự động hóa, cải thiện độ trung thực của phản hồi cho người xây dựng và giảm thời gian cần thiết cho việc đánh giá bảo mật. Tất cả những hành động này đều cải thiện chất lượng phần mềm bạn xây dựng và tăng tốc độ đưa các tính năng vào sản xuất.\n"
 },
 {
-	"uri": "/vi/2-prerequiste/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/2-prerequiste/",
 	"title": "Các bước chuẩn bị",
 	"tags": [],
 	"description": "",
 	"content": "\rBài workshop này yêu cầu bạn có kiến thức cơ bản về VPC , EC2 , public/private subnet để thực hiện bài thực hành này.\nĐể tìm hiểu cách tạo các EC2 instance và VPC với public/private subnet các bạn có thể tham khảo bài lab :\nGiới thiệu về Amazon EC2 Làm việc với Amazon VPC Nội dung Sơ đồ hệ thống , cách triển khai kiến trúc "
 },
 {
-	"uri": "/vi/4-wellarchitecture/4.2-security_pillar/4.2.2-identity_and_access_management/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/4-wellarchitecture/4.2-security_pillar/4.2.2-identity_and_access_management/",
 	"title": "Identity and access management",
 	"tags": [],
 	"description": "",
 	"content": "\rĐể sử dụng dịch vụ AWS, bạn phải cấp cho người dùng và ứng dụng quyền truy cập vào tài nguyên trong tài khoản AWS của mình. Khi chạy nhiều khối lượng công việc hơn trên AWS, bạn cần có sẵn các quyền và khả năng quản lý danh tính mạnh mẽ để đảm bảo rằng đúng người có quyền truy cập vào đúng tài nguyên trong điều kiện phù hợp. AWS cung cấp nhiều lựa chọn khả năng để giúp bạn quản lý danh tính con người và máy móc cũng như các quyền của chúng. Các phương pháp thực hành tốt nhất cho những khả năng này thuộc hai lĩnh vực chính:\nQuản lý danh tính (Identity management) Có hai loại danh tính bạn cần quản lý khi tiếp cận vận hành khối lượng công việc AWS an toàn.\nDanh tính con người: Quản trị viên, nhà phát triển, người vận hành và người tiêu dùng ứng dụng của bạn yêu cầu danh tính để truy cập vào môi trường và ứng dụng AWS của bạn. Đây có thể là thành viên trong tổ chức của bạn hoặc người dùng bên ngoài mà bạn cộng tác và tương tác với tài nguyên AWS của bạn thông qua trình duyệt web, ứng dụng khách, ứng dụng di động hoặc công cụ dòng lệnh tương tác.\nNhận dạng máy: Các ứng dụng khối lượng công việc, công cụ vận hành và thành phần của bạn yêu cầu danh tính để đưa ra yêu cầu tới các dịch vụ AWS, chẳng hạn như để đọc dữ liệu. Những danh tính này bao gồm các máy chạy trong môi trường AWS của bạn, chẳng hạn như phiên bản Amazon EC2 hoặc hàm AWS Lambda. Bạn cũng có thể quản lý danh tính máy cho các bên bên ngoài cần quyền truy cập. Ngoài ra, bạn cũng có thể có các máy bên ngoài AWS cần quyền truy cập vào môi trường AWS của mình.\nQuản lý quyền (Permissions management) Quản lý các quyền để kiểm soát quyền truy cập vào danh tính con người và máy móc yêu cầu quyền truy cập vào AWS và khối lượng công việc của bạn. Quyền kiểm soát ai có thể truy cập cái gì và trong những điều kiện nào. Đặt quyền cho danh tính con người và máy cụ thể để cấp quyền truy cập vào các hành động dịch vụ cụ thể trên các tài nguyên cụ thể. Ví dụ: bạn có thể cho phép nhà phát triển tạo hàm Lambda mới nhưng chỉ ở một Khu vực cụ thể.\nCó một số cách để cấp quyền truy cập vào các loại tài nguyên khác nhau. Một cách là sử dụng các loại chính sách khác nhau.\nResource-based policies Permissions boundaries Attribute-based access control (ABAC) Organizations service control policies (SCP) Session policies "
 },
 {
-	"uri": "/vi/4-wellarchitecture/4.1-operational_excellence_pillar/4.1.2-prepare/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/4-wellarchitecture/4.1-operational_excellence_pillar/4.1.2-prepare/",
 	"title": "Prepare Area (Sự chuẩn bị)",
 	"tags": [],
 	"description": "",
 	"content": "Các thông tin chung của Prepare Area mà mình đúc kết Thiết kế khối lượng công việc hiệu quả: Xây dựng khối lượng công việc cung cấp đầy đủ thông tin, dễ quan sát và điều tra. Tăng cường khả năng quan sát: Theo dõi, phân tích dữ liệu để phát hiện vấn đề sớm và đưa ra quyết định dựa trên dữ liệu. Cải thiện luồng thay đổi: Nhanh chóng triển khai thay đổi, giảm thiểu rủi ro và phục hồi nhanh chóng khi xảy ra sự cố. Đảm bảo sẵn sàng hoạt động: Kiểm tra kỹ trước khi triển khai, có quy trình rõ ràng và tài liệu đầy đủ. Sử dụng AWS để quản lý khối lượng công việc: CloudFormation cho phép bạn có môi trường phát triển, thử nghiệm và sản xuất theo khuôn mẫu, nhất quán với mức độ kiểm soát hoạt động ngày càng tăng. "
 },
 {
-	"uri": "/vi/2-prerequiste/2.1-architecture/2.1.2-createtglb/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/2-prerequiste/2.1-architecture/2.1.2-createtglb/",
 	"title": "Tạo Target Group và Load Balancer",
 	"tags": [],
 	"description": "",
 	"content": "Tạo Target Group Tìm kiếm EC2 -\u0026gt; xuống phần Load Balancer và chọn tạo Target group\nCài đặt cấu hình của Target group như sau :\nMục Choose a target type : chọn Instances\nTarget group name : TG1 Mục VPC : Chọn ASG-ALB-vpc Các phần còn lại chúng ta giữ nguyên và bấm next rồi tạo\nTạo Load Balancer Tìm kiếm EC2 -\u0026gt; xuống phần Load Balancer\nTại phần Load balancer types : Chọn Application Load Balancer và bấm Create Đặt tên là ALB1 Mục Network mapping:\nChọn VPC là ASG-ALB-vpc Chọn 2 Availability Zones , sau đó chọn 2 public subnet Tại phần Security group , xóa security group mặc định và chọn ALB-1 Tại mục Listeners and routing, chọn Default action là TG-1 Lưu ý: Bộ cân bằng tải (Load balancer) định kỳ gửi ping, thử kết nối hoặc gửi yêu cầu để kiểm tra phiên bản EC2. Những thử nghiệm này được gọi là kiểm tra sức khỏe (health checks).\nĐể phần còn lại mặc định và bấm Create Load Balancer Lưu ý: Chúng ta phải chỉ định các vùng sẵn sàng mà cân bằng tải cần được bật, khiến nó chỉ định tuyến lưu lượng truy cập cho hai mục tiêu được khởi chạy trong các vùng sẵn sàng đó. Bạn phải bao gồm các subnet từ tối thiểu hai Availability zones để làm cho bộ cân bằng tải của chúng ta có tính sẵn sàng cao (Highly-Available)\n"
 },
 {
-	"uri": "/vi/3-cleanup/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/3-cleanup/",
 	"title": "Dọn dẹp tài nguyên  ",
 	"tags": [],
 	"description": "",
 	"content": "Chúng ta sẽ tiến hành các bước sau để xóa các tài nguyên chúng ta đã tạo trong bài thực hành này.\nXóa Auto Scaling Group Truy cập giao diện quản trị dịch vụ EC2 Kéo xuống dưới cùng và chọn Auto Scaling Groups Tích chọn MyASG Click Actions Click Delete Tại ô confirm, điền thông tin để xác nhận xóa Xóa Load Balancer Truy cập giao diện quản trị dịch vụ EC2 Kéo xuống dưới và chọn Load Balancers Tích chọn ALB1 Click Actions Click Delete load balancer Tại ô confirm, điền thông tin để xác nhận xóa Xóa Launch Template Truy cập giao diện quản trị dịch vụ EC2 Kéo xuống dưới và chọn Launch Templates Tích chọn MyLT1 Click Actions Click Delete template Tại ô confirm, điền thông tin để xác nhận xóa Xóa Target Group Truy cập giao diện quản trị dịch vụ EC2 Kéo xuống dưới và chọn Target Groups Tích chọn TG1 Click Actions Click Deleter Tại ô confirm, điền thông tin để xác nhận xóa Xóa VPC Truy cập vào giao diện quản trị dịch vụ VPC Click Your VPCs. Click chọn ASG-ALB-vpc. Click Actions. Click Delete VPC. Tại ô confirm, điền delete để xác nhận, click Delete để thực hiện xóa Lab VPC và các tài nguyên liên quan. "
 },
 {
-	"uri": "/vi/4-wellarchitecture/4.2-security_pillar/4.2.3-detection/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/4-wellarchitecture/4.2-security_pillar/4.2.3-detection/",
 	"title": "Detection",
 	"tags": [],
 	"description": "",
 	"content": "\rTính năng phát hiện cho phép bạn xác định cấu hình bảo mật sai, mối đe dọa hoặc hành vi không mong muốn. Đây là một phần thiết yếu của vòng đời bảo mật và có thể được sử dụng để hỗ trợ quy trình chất lượng, nghĩa vụ tuân thủ hoặc pháp lý cũng như cho các nỗ lực ứng phó và xác định mối đe dọa.\nSự phát hiện (Detection) bao gồm hai phần: phát hiện những thay đổi cấu hình không mong muốn hoặc không mong muốn và phát hiện hành vi không mong muốn. Việc đầu tiên có thể diễn ra ở nhiều nơi trong vòng đời phân phối ứng dụng. Sử dụng cơ sở hạ tầng làm mã (ví dụ: mẫu CloudFormation), bạn có thể kiểm tra cấu hình không mong muốn trước khi triển khai khối lượng công việc bằng cách triển khai các bước kiểm tra trong quy trình CI/CD hoặc kiểm soát nguồn. Đối với một ứng dụng đang chạy, bạn có thể kiểm tra xem cấu hình có bị thay đổi theo cách không mong muốn hay không, kể cả bên ngoài sự kiện triển khai đã biết hoặc sự kiện mở rộng quy mô tự động.\nĐối với phần thứ hai của quá trình phát hiện, hành vi không mong muốn, bạn có thể sử dụng các công cụ hoặc bằng cách cảnh báo về sự gia tăng của một loại lệnh gọi API cụ thể. Khi sử dụng Amazon GuardDuty, bạn có thể được cảnh báo khi hoạt động bất ngờ, có khả năng trái phép hoặc độc hại xảy ra trong tài khoản AWS của bạn. Bạn cũng nên giám sát rõ ràng các lệnh gọi API thay đổi mà bạn không mong đợi sẽ được sử dụng trong khối lượng công việc của mình và các lệnh gọi API làm thay đổi trạng thái bảo mật.\n"
 },
 {
-	"uri": "/vi/4-wellarchitecture/4.1-operational_excellence_pillar/4.1.3-operate/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/4-wellarchitecture/4.1-operational_excellence_pillar/4.1.3-operate/",
 	"title": "Operate Area (Vận hành)",
 	"tags": [],
 	"description": "",
 	"content": "\rTrong AWS, bạn có thể tạo chế độ xem bảng điều khiển về số liệu thu thập được từ khối lượng công việc và từ AWS. Bạn có thể tận dụng CloudWatch hoặc các ứng dụng của bên thứ ba để tổng hợp và trình bày chế độ xem cấp độ kinh doanh, khối lượng công việc và hoạt động của các hoạt động vận hành. AWS cung cấp thông tin chi tiết về khối lượng công việc thông qua các khả năng ghi nhật ký bao gồm AWS X-Ray, CloudWatch, CloudTrail và VPC Flow Logs để xác định các sự cố khối lượng công việc nhằm hỗ trợ phân tích nguyên nhân gốc rễ và khắc phục.\nKhả năng quan sát cho phép bạn tập trung vào dữ liệu có ý nghĩa và hiểu được các tương tác và đầu ra của khối lượng công việc. Bằng cách tập trung vào những hiểu biết thiết yếu và loại bỏ dữ liệu không cần thiết, bạn duy trì cách tiếp cận đơn giản để hiểu hiệu suất khối lượng công việc. Điều cần thiết không chỉ là thu thập dữ liệu mà còn phải diễn giải dữ liệu một cách chính xác.\nQuản lý hiệu quả và hiệu suất các sự kiện hoạt động là cần thiết để đạt được sự xuất sắc trong việc vận hành. Ưu tiên các phản hồi cho các sự kiện dựa trên tác động của chúng đối với doanh nghiệp và khách hàng. Xác minh rằng nếu có cảnh báo được đưa ra để phản hồi cho một sự kiện, thì có một quy trình liên quan để chạy với một chủ sở hữu được xác định cụ thể.\nTruyền đạt trạng thái hoạt động của khối lượng công việc thông qua bảng thông tin và thông báo được thiết kế riêng cho đối tượng mục tiêu (ví dụ: khách hàng, doanh nghiệp, nhà phát triển, hoạt động) để họ có thể thực hiện hành động phù hợp, quản lý kỳ vọng của họ và được thông báo khi hoạt động bình thường trở lại.\n"
 },
 {
-	"uri": "/vi/4-wellarchitecture/4.3-reliability_pillar/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/4-wellarchitecture/4.3-reliability_pillar/",
 	"title": "Reliability Pillar",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/vi/2-prerequiste/2.1-architecture/2.1.3-createlt/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/2-prerequiste/2.1-architecture/2.1.3-createlt/",
 	"title": "Tạo Launch Template",
 	"tags": [],
 	"description": "",
 	"content": "Tạo Launch Template Trong ngăn điều hướng bên trái (cuộn xuống) trong Instances, nhấp vào Launch templates.\nNhấp vào nút Create launch template.\nTrong phần Launch template name and description:\nLaunch template name: Nhập LT1 Để các tùy chọn khác là mặc định Trong Launch template contents: Chọn Amazon Linux từ Quick Start Amazon machine Amazon (AMI): Chọn Amazon Linux 2023 AMI Trong phần Instance type: Chọn t2.micro từ danh sách bên dưới Key pair (Login): Chọn Keep it as default\nSecurity groups: Chọn Web-1 từ danh sách Để lại tất cả các tùy chọn khác như mặc định. Mở rộng tùy chọn Advanced details, Chuyển đến User data và dán tập lệnh bên dưới :\n#!/bin/bash\rsudo su\ryum update -y\ryum install -y httpd\rsystemctl start httpd\rsystemctl enable httpd\recho \u0026#34;\u0026lt;html\u0026gt; \u0026lt;h1\u0026gt; Hello, this is my First Workshop!! \u0026lt;/h1\u0026gt; \u0026lt;/html\u0026gt;\u0026#34; \u0026gt; /var/www/html/index.html Để tạo, hãy nhấp vào nút Create launch template. Sau khi tạo thành công, nó sẽ tạo Launch template. "
 },
 {
-	"uri": "/vi/4-wellarchitecture/4.1-operational_excellence_pillar/4.1.4-evolve/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/4-wellarchitecture/4.1-operational_excellence_pillar/4.1.4-evolve/",
 	"title": "Evolve Area (Sự cải tiến , tiến bộ)",
 	"tags": [],
 	"description": "",
 	"content": "\rTrên AWS, bạn có thể xuất dữ liệu nhật ký của mình sang Amazon S3 hoặc gửi nhật ký trực tiếp đến Amazon S3 để lưu trữ lâu dài. Sử dụng AWS Glue, bạn có thể khám phá và chuẩn bị dữ liệu nhật ký của mình trong Amazon S3 để phân tích và lưu trữ siêu dữ liệu liên quan trong AWS Glue Data Catalog. Amazon Athena, thông qua tích hợp gốc với AWS Glue, sau đó có thể được sử dụng để phân tích dữ liệu nhật ký của bạn, truy vấn dữ liệu đó bằng SQL chuẩn. Sử dụng công cụ trí tuệ kinh doanh như Amazon QuickSight, bạn có thể trực quan hóa, khám phá và phân tích dữ liệu của mình. Khám phá các xu hướng và sự kiện quan tâm có thể thúc đẩy cải tiến.\nHọc hỏi, chia sẻ và liên tục cải tiến để duy trì sự xuất sắc trong hoạt động. Dành các chu kỳ làm việc để thực hiện các cải tiến gia tăng gần như liên tục. Thực hiện phân tích sau sự cố đối với tất cả các sự kiện tác động đến khách hàng. Xác định các yếu tố góp phần và hành động phòng ngừa để hạn chế hoặc ngăn ngừa sự tái diễn. Trao đổi các yếu tố góp phần với cộng đồng bị ảnh hưởng khi thích hợp. Đánh giá thường xuyên và ưu tiên các cơ hội cải tiến (ví dụ: yêu cầu tính năng, khắc phục sự cố và yêu cầu tuân thủ), bao gồm cả khối lượng công việc và quy trình hoạt động. Sự tiến bộ thành công của hoạt động được xây dựng dựa trên: những cải tiến nhỏ thường xuyên; cung cấp môi trường an toàn và thời gian để thử nghiệm, phát triển và kiểm tra các cải tiến; và môi trường khuyến khích học hỏi từ những thất bại. Hỗ trợ hoạt động cho môi trường sandbox, phát triển, thử nghiệm và sản xuất, với mức độ kiểm soát hoạt động ngày càng tăng, tạo điều kiện cho phát triển và tăng khả năng dự đoán kết quả thành công từ những thay đổi được triển khai vào sản xuất.\n"
 },
 {
-	"uri": "/vi/4-wellarchitecture/4.2-security_pillar/4.2.4-infrastructure_protection/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/4-wellarchitecture/4.2-security_pillar/4.2.4-infrastructure_protection/",
 	"title": "Infrastructure protection",
 	"tags": [],
 	"description": "",
 	"content": "Bảo vệ cơ sở hạ tầng bao gồm các phương pháp kiểm soát, chẳng hạn như phòng thủ theo chiều sâu, cần thiết để đáp ứng các phương pháp thực hành tốt nhất và các nghĩa vụ của tổ chức hoặc quy định. Việc sử dụng các phương pháp này là rất quan trọng để đảm bảo các hoạt động diễn ra thành công trên đám mây.\nBảo vệ cơ sở hạ tầng là một phần quan trọng của chương trình bảo mật thông tin. Nó đảm bảo rằng các hệ thống và dịch vụ trong khối lượng công việc của bạn được bảo vệ khỏi sự truy cập ngoài ý muốn và trái phép cũng như các lỗ hổng tiềm ẩn. Ví dụ: bạn sẽ xác định ranh giới tin cậy (ví dụ: ranh giới mạng và tài khoản), cấu hình và bảo trì bảo mật hệ thống (ví dụ: tăng cường, giảm thiểu và vá lỗi), xác thực và ủy quyền hệ điều hành (ví dụ: người dùng, khóa và quyền truy cập). các cấp độ và các điểm thực thi chính sách thích hợp khác (ví dụ: tường lửa ứng dụng web và/hoặc cổng API).\nRegions, Availability Zones, AWS Local Zones, and AWS Outposts\nCó 2 cách tiếp cận infrastructure protection : Bảo vệ mạng Người dùng, cả trong lực lượng lao động và khách hàng của bạn, có thể ở bất cứ đâu. Bạn cần phải chuyển hướng khỏi các mô hình truyền thống là tin tưởng bất kỳ ai và bất kỳ thứ gì có quyền truy cập vào mạng của bạn. Khi bạn tuân theo nguyên tắc áp dụng bảo mật ở tất cả các lớp, bạn sẽ sử dụng phương pháp Zero Trust. Bảo mật Zero Trust là mô hình trong đó các thành phần ứng dụng hoặc vi dịch vụ được coi là riêng biệt với nhau và không có thành phần hoặc vi dịch vụ nào tin cậy bất kỳ thành phần nào.\nViệc lập kế hoạch và quản lý cẩn thận thiết kế mạng của bạn tạo nền tảng cho cách bạn cung cấp sự cô lập và ranh giới cho các tài nguyên trong khối lượng công việc của mình. Vì nhiều tài nguyên trong khối lượng công việc của bạn hoạt động trong VPC và kế thừa các thuộc tính bảo mật nên điều quan trọng là thiết kế phải được hỗ trợ bằng các cơ chế kiểm tra và bảo vệ được hỗ trợ bởi tự động hóa.\nBảo vệ máy tính Tài nguyên điện toán bao gồm phiên bản EC2, bộ chứa, hàm AWS Lambda, dịch vụ cơ sở dữ liệu, thiết bị IoT, v.v. Mỗi loại tài nguyên điện toán này yêu cầu các cách tiếp cận khác nhau để bảo mật chúng. Tuy nhiên, chúng có chung các chiến lược chung mà bạn cần xem xét: phòng thủ theo chiều sâu, quản lý lỗ hổng, giảm bề mặt tấn công, tự động hóa cấu hình và vận hành cũng như thực hiện các hành động từ xa. Trong phần này, bạn sẽ tìm thấy hướng dẫn chung để bảo vệ tài nguyên điện toán của mình cho các dịch vụ chính. Đối với mỗi dịch vụ AWS được sử dụng, điều quan trọng là bạn phải kiểm tra các đề xuất bảo mật cụ thể trong tài liệu dịch vụ.\n"
 },
 {
-	"uri": "/vi/4-wellarchitecture/4.4-performance_efficiency_pillar/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/4-wellarchitecture/4.4-performance_efficiency_pillar/",
 	"title": "Performance Efficiency Pillar",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/vi/2-prerequiste/2.1-architecture/2.1.4-createasg/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/2-prerequiste/2.1-architecture/2.1.4-createasg/",
 	"title": "Tạo Auto Scaling group",
 	"tags": [],
 	"description": "",
 	"content": "Tạo Auto Scaling group Tìm kiếm EC2 , tìm xuống mục Auto Scaling group để tạo mới\nMục Name , nhập MyASG\nMục Launch Template, chọn MyLT1 rồi bấm Next Mục Network , chọn VPC là ASG-ALB-vpc và chọn 2 public subnet và bấm next Chọn Attach to an existing load balancer\nTại mục Attach to an existing load balancer bên dưới , chọn Choose from your load balancer target group\nChọn TG1 Để phần còn lại mặc định và chọn Next\nTại mục Group size , đặt Desired capacity là 2\nTại phần Scaling :\nMin desired capacity : 2 Max desired capacity : 4 Mục Automatic scaling , ta chọn Target tracking scaling policy Để phần còn lại mặc định và chọn Next Ở đây chúng ta sẽ sử dụng dịch vụ SNS để gửi thông báo qua mail\nTa chọn Add notification\nTa đặt tên topic là my-topic Phần with these recipients, ta gõ địa chỉ email Event types , ta chọn tất cả Bấm Next Ngay sau đó bạn có thể thấy có mail của AWS gửi về để xác nhận , bấm vào đường link Confirm subscription Để các phần còn lại mặc định rồi tạo thui ,ta sẽ phải đợi 1 vài phút để Auto Scaling group tạo các EC2 và kiểm tra tình trạng của chúng\nKiểm tra tình trạng của Load balancers Tìm kiếm EC2 -\u0026gt; Tìm đến mục Load Balancer và chọn ALB-1\nTìm mục Resource map - new bên dưới , ta có thể thấy các Instances được tạo bởi Auto Scaling group đều có tình trạng Healthy Chuyển sang tab Details bên cạnh ,kéo xuống dưới và bấm sao chép DNS name và gắn lên trình duyệt , ta sẽ được : "
 },
 {
-	"uri": "/vi/4-wellarchitecture/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/4-wellarchitecture/",
 	"title": "Well-Architecture là gì nhỉ ?",
 	"tags": [],
 	"description": "",
 	"content": "Tổng quan về Framework AWS Well-Architected Framework diễn tả các ý chính, nguyên lý thiết kế, và các biện pháp kiến ​​trúc tốt nhất để thiết kế và chạy khối lượng công việc lớn trên đám mây.\nNội dung chính 6 trụ cột Well-Architect Operational Excellence Pillar Security Pillar Reliability Pillar (Đang cập nhật) Performance Efficiency Pillar (Đang cập nhật) Cost Optimization Pillar (Đang cập nhật) Sustainability Pillar (Đang cập nhật) Bạn có thể tìm đọc thêm trong tài liệu chính thức của AWS Tài liệu chính thức của AWS "
 },
 {
-	"uri": "/vi/4-wellarchitecture/4.5-cost_optimization_pillar/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/4-wellarchitecture/4.5-cost_optimization_pillar/",
 	"title": "Cost Optimization Pillar",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/vi/4-wellarchitecture/4.2-security_pillar/4.2.5-data_protection/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/4-wellarchitecture/4.2-security_pillar/4.2.5-data_protection/",
 	"title": "Data Protection",
 	"tags": [],
 	"description": "",
 	"content": "Trước khi kiến ​​trúc bất kỳ khối lượng công việc nào, cần phải thực hiện các biện pháp thực hành nền tảng có ảnh hưởng đến bảo mật. Ví dụ: phân loại dữ liệu cung cấp cách phân loại dữ liệu dựa trên mức độ nhạy cảm và mã hóa bảo vệ dữ liệu bằng cách khiến dữ liệu trở nên khó hiểu đối với những truy cập trái phép. Những phương pháp này rất quan trọng vì chúng hỗ trợ các mục tiêu như ngăn chặn việc xử lý sai hoặc tuân thủ các nghĩa vụ pháp lý.\nTrong AWS, có một số phương pháp khác nhau mà bạn có thể sử dụng khi giải quyết vấn đề bảo vệ dữ liệu:\nPhân loại dữ liệu Phân loại dữ liệu cung cấp cách phân loại dữ liệu của tổ chức dựa trên mức độ quan trọng và độ nhạy cảm để giúp bạn xác định các biện pháp kiểm soát bảo vệ và lưu giữ thích hợp.\nBảo vệ dữ liệu ở trạng thái nghỉ ngơi Dữ liệu ở trạng thái lưu trữ thể hiện mọi dữ liệu mà bạn lưu giữ trong bộ lưu trữ cố định trong bất kỳ khoảng thời gian nào trong khối lượng công việc của mình. Điều này bao gồm lưu trữ khối, lưu trữ đối tượng, cơ sở dữ liệu, kho lưu trữ, thiết bị IoT và bất kỳ phương tiện lưu trữ nào khác mà dữ liệu được lưu giữ. Việc bảo vệ dữ liệu của bạn ở trạng thái lưu trữ giúp giảm nguy cơ truy cập trái phép khi thực hiện mã hóa và kiểm soát truy cập thích hợp.\nEncryption và tokenization là hai chương trình bảo vệ dữ liệu quan trọng nhưng khác biệt.\nTokenization là một quá trình cho phép bạn xác định mã thông báo (token) để thể hiện một phần thông tin nhạy cảm khác (ví dụ: token để thể hiện số thẻ tín dụng của khách hàng). Bản thân token phải vô nghĩa và không được lấy từ dữ liệu mà nó đang mã hóa – do đó, bản tóm tắt mật mã không thể sử dụng được làm mã thông báo. Bằng cách lập kế hoạch cẩn thận cho phương pháp mã hóa, bạn có thể cung cấp sự bảo vệ bổ sung cho nội dung của mình và bạn có thể đảm bảo rằng bạn đáp ứng các yêu cầu tuân thủ của mình. Ví dụ: bạn có thể giảm phạm vi tuân thủ của hệ thống xử lý thẻ tín dụng nếu bạn tận dụng token thay vì số thẻ tín dụng.\nMã hóa (Encryption) là một cách chuyển đổi nội dung theo cách khiến nội dung đó không thể đọc được nếu không có khóa bí mật cần thiết để giải mã nội dung trở lại dạng văn bản gốc. Cả tokenization và encryption đều có thể được sử dụng để bảo mật và bảo vệ thông tin khi thích hợp. Hơn nữa, che giấu là một kỹ thuật cho phép một phần dữ liệu được biên tập lại đến mức mà dữ liệu còn lại không được coi là nhạy cảm. Ví dụ: PCI-DSS cho phép giữ lại bốn chữ số cuối của số thẻ bên ngoài ranh giới phạm vi tuân thủ để lập chỉ mục.\nBảo vệ dữ liệu trong quá trình chuyển tiếp Dữ liệu đang truyền (Data in transit) là bất kỳ dữ liệu nào được gửi từ hệ thống này sang hệ thống khác. Điều này bao gồm liên lạc giữa các tài nguyên trong khối lượng công việc của bạn cũng như liên lạc giữa các dịch vụ khác và người dùng cuối của bạn. Bằng cách cung cấp mức bảo vệ thích hợp cho dữ liệu của bạn trong quá trình truyền, bạn bảo vệ tính bảo mật và tính toàn vẹn của dữ liệu trong khối lượng công việc của mình.\nBảo mật dữ liệu giữa VPC hoặc các vị trí tại chỗ: Bạn có thể sử dụng AWS PrivateLink để tạo kết nối mạng riêng tư và an toàn giữa Amazon Virtual Private Cloud (Amazon VPC) hoặc kết nối tại chỗ với các dịch vụ được lưu trữ trong AWS. Bạn có thể truy cập các dịch vụ AWS, dịch vụ của bên thứ ba và các dịch vụ trong các tài khoản AWS khác như thể chúng nằm trên mạng riêng của bạn. Với AWS PrivateLink, bạn có thể truy cập các dịch vụ trên nhiều tài khoản có IP CIDR chồng chéo mà không cần Internet gateway hoặc NAT. Bạn cũng không phải định cấu hình quy tắc tường lửa, định nghĩa đường dẫn hoặc bảng lộ trình. Lưu lượng truy cập vẫn nằm trên đường trục của Amazon và không truyền qua Internet, do đó dữ liệu của bạn được bảo vệ. Bạn có thể duy trì việc tuân thủ các quy định tuân thủ dành riêng cho ngành, chẳng hạn như HIPAA và Chương trình bảo vệ quyền riêng tư của EU/Hoa Kỳ. AWS PrivateLink hoạt động liền mạch với các giải pháp của bên thứ ba để tạo ra một mạng toàn cầu đơn giản hóa, cho phép bạn tăng tốc quá trình di chuyển lên đám mây và tận dụng các dịch vụ AWS có sẵn.\n"
 },
 {
-	"uri": "/vi/2-prerequiste/2.1-architecture/2.1.5-createwacl/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/2-prerequiste/2.1-architecture/2.1.5-createwacl/",
 	"title": "Tạo IP sets và Web ACLS",
 	"tags": [],
 	"description": "",
 	"content": "Tạo IP sets Tìm kiếm WAF \u0026amp; Shield , chọn mục IP sets bấm nút Create IP sets Tại mục IP set details : IP set name : nhập MYIpSet Description : nhập IP set to block my public IP Region : Chọn Singapore Tại mục IP addresses, ta cần truy cập trang https://www.whatismyip.com/ và copy địa chỉ ipv4 và thêm /32 ( ví dụ như 1.2.3.4/32) Bấm nút Create IP set Tạo Web ACLs Bấm nút Create web ACL Tại mục Web ACL details: Resource type : Chọn Regional resources Region : Chọn Singapore Name : MyWebACL Description : Không điền cũng được nè Tại mục Associated AWS resources : Chọn nút Add AWS resources Phần Resource type chọn Application Load Balancer và chọn tiếp ALB1 bên dưới -\u0026gt; Bấm Add Sau đó bấm Next Tại mục Rules , ta chọn Add rules và chọn Add my own rules and rule groups\nChọn Rule type là IP set , đặt tên Rule\nTại mục Ip set , ta chọn MyIpSet vừa tạo trước đó Để tất cả phần còn lại mặc định và tạo Web ACL thui\nĐợi vài phút và F5 lại trình duyệt với url là DNS của Load Balancer ta đã mở trước đó , bạn có thể thấy chúng ta đã tự chặn IP của chính mình và nó đã hoạt động , bạn có thể cài đặt 1 vài extension để đổi IP và test lại\n"
 },
 {
-	"uri": "/vi/4-wellarchitecture/4.1-operational_excellence_pillar/4.1.5-conclusion/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/4-wellarchitecture/4.1-operational_excellence_pillar/4.1.5-conclusion/",
 	"title": "Tổng kết",
 	"tags": [],
 	"description": "",
 	"content": "Sự xuất sắc trong vận hành (Operational Excellence) là một nỗ lực liên tục và lặp đi lặp lại. Thiết lập tổ chức của bạn để thành công bằng cách có các mục tiêu chung. Đảm bảo rằng mọi người hiểu vai trò của họ trong việc đạt được kết quả kinh doanh và cách họ tác động đến khả năng thành công của những người khác. Cung cấp hỗ trợ cho các thành viên trong nhóm của bạn để họ có thể hỗ trợ kết quả kinh doanh của bạn.\nMọi sự kiện và lỗi vận hành đều phải được coi là cơ hội để cải thiện hoạt động của kiến ​​trúc của bạn. Bằng cách hiểu được nhu cầu của khối lượng công việc, xác định trước runbook cho các hoạt động thường lệ và playbook để hướng dẫn giải quyết vấn đề, sử dụng các tính năng hoạt động dưới dạng mã trong AWS và duy trì nhận thức về tình huống, hoạt động của bạn sẽ được chuẩn bị tốt hơn và có thể phản ứng hiệu quả hơn khi sự cố xảy ra.\nBằng cách tập trung vào cải tiến gia tăng dựa trên các ưu tiên khi chúng thay đổi và các bài học kinh nghiệm từ phản ứng sự kiện và phân tích hồi cứu, bạn sẽ góp phần vào sự thành công của doanh nghiệp bằng cách tăng hiệu quả và hiệu suất của các hoạt động.\nCảm ơn các bạn đã xem đến tận đây , mình rất cảm kích khi tài liệu và kiến thức của mình có thể truyền tải tới mọi người ❤❤ Nếu có góp ý về workshop này , hãy nhắn cho mình qua FaceBook hoặc LinkedIn để có thể cùng nhau phát triển cộng đồng AWS Study Group nhé\n"
 },
 {
-	"uri": "/vi/2-prerequiste/2.1-architecture/2.1.6-createcwatch/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/2-prerequiste/2.1-architecture/2.1.6-createcwatch/",
 	"title": "Đọc Metric với CloudWatch",
 	"tags": [],
 	"description": "",
 	"content": "Tạo CloudWatch Tìm kiếm CloudWatch , chọn mục Dashboard và bấm Create dashboard, tự đặt tên Dashboard name và click Create dashboard Chọn Data type là Metrics và Widget type là Line Tại mục Browse , Chọn EC2 -\u0026gt; Chọn By Auto Scaling Group -\u0026gt; Tìm chọn mục có Metric name là CPUUtilization và bấm Create Widget Cùng đọc metric nào :v "
 },
 {
-	"uri": "/vi/4-wellarchitecture/4.2-security_pillar/4.2.6-incident_response/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/4-wellarchitecture/4.2-security_pillar/4.2.6-incident_response/",
 	"title": "Incident response",
 	"tags": [],
 	"description": "",
 	"content": "Ngay cả với các biện pháp kiểm soát phòng ngừa và phát hiện hoàn thiện, tổ chức của bạn vẫn nên triển khai các cơ chế để ứng phó và giảm thiểu tác động tiềm ẩn của các sự cố bảo mật. Sự chuẩn bị của bạn ảnh hưởng mạnh mẽ đến khả năng nhóm của bạn hoạt động hiệu quả trong khi xảy ra sự cố, khả năng cô lập, ngăn chặn và thực hiện điều tra về các vấn đề cũng như khôi phục hoạt động về trạng thái tốt đã biết. Việc bố trí các công cụ và quyền truy cập trước khi xảy ra sự cố bảo mật, sau đó thường xuyên thực hành ứng phó sự cố trong những ngày diễn ra trận đấu, giúp đảm bảo rằng bạn có thể phục hồi đồng thời giảm thiểu gián đoạn kinh doanh.\nTopics\nAspects of AWS incident response Design goals of cloud response Preparation Operations Post-incident activity "
 },
 {
-	"uri": "/vi/4-wellarchitecture/4.6-sustainability_pillar/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/4-wellarchitecture/4.6-sustainability_pillar/",
 	"title": "Sustainability Pillar",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/vi/4-wellarchitecture/4.2-security_pillar/4.2.7-application_security/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/4-wellarchitecture/4.2-security_pillar/4.2.7-application_security/",
 	"title": "Organization Area (Sự tổ chức)",
 	"tags": [],
 	"description": "",
 	"content": "Các thông tin chung của Organization Area mà mình đúc kết Sự ưu tiên và xác định nhu cầu Hiểu rõ công việc: Các nhóm cần hiểu rõ công việc của mình, mục tiêu chung và vai trò của từng thành viên để đặt ra ưu tiên hiệu quả. Đánh giá nhu cầu khách hàng: Cần xác định rõ nhu cầu của khách hàng (nội bộ và bên ngoài) để tập trung vào những việc quan trọng nhất. Tuân thủ quy định: Các nhóm cần tuân thủ các quy định và tiêu chuẩn của tổ chức và ngành. Đánh giá thường xuyên: Cần thường xuyên đánh giá lại ưu tiên để phù hợp với sự thay đổi của nhu cầu. Quản lý rủi ro Xác định rủi ro: Xác định và đánh giá các rủi ro tiềm ẩn có thể ảnh hưởng đến doanh nghiệp. Cân nhắc lợi ích và rủi ro: Cân nhắc kỹ lưỡng giữa các lợi ích và rủi ro khi đưa ra quyết định. Quản lý rủi ro: Có các biện pháp để quản lý và giảm thiểu rủi ro. Hiểu rõ vai trò và trách nhiệm Hiểu rõ vai trò: Mỗi nhóm cần hiểu rõ vai trò của mình trong việc đạt được mục tiêu chung của tổ chức. Làm việc nhóm: Các nhóm cần hợp tác và hỗ trợ lẫn nhau để đạt được hiệu quả cao nhất. Linh hoạt: Không có một mô hình làm việc duy nhất phù hợp cho tất cả các nhóm. "
 },
 {
-	"uri": "/vi/categories/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/vi/tags/",
+	"uri": "https://dinhlam310.github.io/AWS-Workshop-1/vi/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",
