@@ -1,223 +1,223 @@
 [
 {
-	"uri": "//localhost:1313/",
+	"uri": "/",
 	"title": "My First Workshop",
 	"tags": [],
 	"description": "",
 	"content": "First Cloud Journey - First Workshop Overall In this workshop, you\u0026rsquo;ll learn the basics and practice of hosting simple website . Besides , you can find interesting about 6 Well-Architecture Pillar.\nContent Introduction Preparation Clean up resources 6 Well-Architecture Pillar "
 },
 {
-	"uri": "//localhost:1313/2-prerequiste/2.1-architecture/",
+	"uri": "/2-prerequiste/2.1-architecture/",
 	"title": "Architectural overview",
 	"tags": [],
 	"description": "",
 	"content": "The architectural overview after you complete the steps to build the system will be as follows:\nContent Create VPC, subnet and security group Create Target group and Load Balancer Create Launch template Create Auto Scaling Group Create IP Sets and Web ACLs Read Metric with Cloudwatch "
 },
 {
-	"uri": "//localhost:1313/2-prerequiste/2.1-architecture/2.1.1-createvpcsg/",
+	"uri": "/2-prerequiste/2.1-architecture/2.1.1-createvpcsg/",
 	"title": "Create VPC, subnet, Security Group ",
 	"tags": [],
 	"description": "",
 	"content": "Create VPC Make sure you are in the Singapore Region.\nAccess VPC service administration interface Click Your VPC. Click Create VPC. At the Create VPC page. In the Resources to create section, select VPC and more In the Name tag section, enter ASG-ALB-vpc. In the IPv4 CIDR section, fill in: 10.10.0.0/16 or leave the default as oke. In the Number of Availability Zones section, select 2 In the Number of public subnets section, select 2 In the Number of private subnets section, select 2 In the NAT gateways section, select 0 In the VPC endpoints section, select None Click Create VPC. We can configure it like the image below: After creating the VPC and subnets, we need to edit the 2 public subnets as follows: Select public subnet, Actions select Edit subnet settings Check the box Enable auto-assign public IPv4 address Click Save and do the same with the remaining public subnet Task 2: Create a security group (Security Group) We will create 2 Security Groups, the first is for the Load Balancer, the second is for the EC2s, we will connect the Inbound SG of the EC2 to the SG of the Load Balancer.\nMake sure you are in the Singapore Region.\nNavigate to EC2 by clicking on the Services menu available in the Compute section.\nOn the left panel menu, select Security Groups in the Network \u0026amp; Security section.\nClick the Create security group button.\nUnder Basic details:\nSecurity group name: Enter ALB-1 Description: enter ALB-1 VPC: Select ASG-ALB-vpc that we just created earlier Click the Add rule section under the Inbound rules section Type : Select HTTP Source : Select Anywhere-IPv4 Leave everything as default and click the Create security group button\nClick the Create security group button.\nNext we create a second security group for EC2 Instance\nUnder Basic details: Security group name: Enter Web-1 Description: enter Web-1 VPC: Select ASG-ALB-vpc that we just created earlier Click the Add rule section under the Inbound rules section Type : Select HTTP Source : Select Custom In the search box: type sg and select security group of ALB-1 Leave everything as default and click the Create security group button "
 },
 {
-	"uri": "//localhost:1313/1-introduce/",
+	"uri": "/1-introduce/",
 	"title": "Introduction",
 	"tags": [],
 	"description": "",
 	"content": "In cyberspace, there are countless static/dynamic websites used every day, however not every website has a system designed well enough to prevent and combat unwanted behaviors from occurring. Things like: Website crash due to sudden number of users, server suddenly stops working, using on-premise system is not guaranteed.\nBy deploying a website on AWS, you get the following advantages:\nCan process and deploy websites quickly for end users High security ability, resistant to attacks by bad guys Ability to expand easily and automatically according to customer needs Centralized management of system resources, friendly interface \u0026hellip;.. With the above advantages, I created this workshop to guide people to take advantage of those advantages and prevent the above behaviors to deploy a static website. Let\u0026rsquo;s continue with the next section to understand clearly about system design.\n"
 },
 {
-	"uri": "//localhost:1313/4-wellarchitecture/4.1-operational_excellence_pillar/",
+	"uri": "/4-wellarchitecture/4.1-operational_excellence_pillar/",
 	"title": "Operational excellence pillar",
 	"tags": [],
 	"description": "",
 	"content": "\rThe operational excellence pillar focuses on running and monitoring systems, and continually improving processes and procedures. Key topics include automating changes, responding to events, and defining standards to manage daily operations.\nDefinition Amazon define operational excellence as a commitment to build software correctly while consistently delivering a great customer experience. It contains best practices for organizing your team, designing your workload, operating it at scale, and evolving it over time.\nGoal The goal of operational excellence is to get new features and bug fixes into customers’ hands quickly and reliably. Organizations that invest in operational excellence consistently delight customers while building new features, making changes, and dealing with failures. Along the way, operational excellence drives towards continuous integration and continuous delivery (CI/CD).\nDesign principles Organize teams around business outcomes Implement observability for actionable insights Safely automate where possible Make frequent, small, reversible changes Refine operations procedures frequently Anticipate failure Learn from all operational events and metrics Use managed services Memorable keywords about the design principles of the operational excellence pillar :\nGroup work CI/CD Continuous improvement Good experience Predictions Services Results Construction commitments There are four best practice areas for operational excellence in the cloud: Organization Prepare Operate Evolve You can read more in the official AWS documentation (Operational excellence pillar) Official AWS documentation "
 },
 {
-	"uri": "//localhost:1313/4-wellarchitecture/4.1-operational_excellence_pillar/4.1.1-organization/",
+	"uri": "/4-wellarchitecture/4.1-operational_excellence_pillar/4.1.1-organization/",
 	"title": "Organization Area",
 	"tags": [],
 	"description": "",
 	"content": "General information of the Organization Area that I summarized Prioritization and identification of needs Understand the work: Teams need to clearly understand their work, common goals and each member\u0026rsquo;s role to set effective priorities. Assess customer needs: Need to clearly identify customer needs (internal and external) to focus on the most important things. Regulatory Compliance: Teams need to comply with organizational and industry regulations and standards. Regularly evaluate: Need to regularly reevaluate priorities to match changing needs. Risk management Identify risks: Identify and evaluate potential risks that may affect the business. Weigh benefits and risks: Carefully consider the benefits and risks when making a decision. Risk management: There are measures to manage and minimize risks. Understand roles and responsibilities Understand roles: Each group needs to clearly understand their role in achieving the organization\u0026rsquo;s common goals. Teamwork: Teams need to cooperate and support each other to achieve the highest efficiency. Flexibility: There is no single working model that fits all teams. "
 },
 {
-	"uri": "//localhost:1313/4-wellarchitecture/4.2-security_pillar/4.2.1-security_foundations/",
+	"uri": "/4-wellarchitecture/4.2-security_pillar/4.2.1-security_foundations/",
 	"title": "Security foundations",
 	"tags": [],
 	"description": "",
 	"content": "Share responsibility AWS Responsibilities “Cloud Security” – AWS is responsible for protecting the infrastructure that runs all services provided in the AWS Cloud. This infrastructure includes the hardware, software, networks, and facilities that run AWS Cloud services.\nCustomer Responsibilities “Cloud Security” – Customer responsibilities will be determined by the AWS Cloud services the customer selects. This determines the amount of configuration work that customers must perform as part of their security responsibilities\nAdministration Security governance, as a subset of the overall approach, aims to support business objectives by defining policies and control objectives to help manage risk. Achieve risk management by following a layered approach to security control objectives – each layer builds on the previous layer. No matter where you implement controls, the goal is the same: manage risk. A variety of risk management frameworks apply to specific industries, regions or technologies. Your main goal: highlight risks based on likelihood and consequences AWS account management and segmentation AWS recommends that you organize workloads in separate accounts and group accounts based on functionality, compliance requirements, or a common set of controls rather than reflecting your organization\u0026rsquo;s reporting structure. In AWS, an account is a rigid boundary. For example, you should isolate the account level to separate production workloads from development and test workloads.\nCentralized account management: AWS Organizations automates the creation and management of AWS accounts and controls them once they are created. Set centralized controls: Control what your AWS account can do by only allowing specific services, Regions, and service actions at the appropriate level. AWS Organizations enables you to use service control policies (SCPs) to apply permission protections at the organization, organizational unit, or account level, applicable to all users and roles* AWS Identity and Access Management (IAM).* Configure services and resources centrally: AWS Organizations helps you configure AWS services that apply to all your accounts. For example, you can configure centralized logging for all actions performed in your organization using AWS CloudTrail and prevent member accounts from deactivating logging sign. You can also centrally aggregate data for the rules you define using AWS Config, allowing you to check your workloads for compliance and react quickly to changes. change. AWS CloudFormation StackSets allows you to centrally manage AWS CloudFormation stacks across accounts and OUs within your organization. This allows you to automatically provision new accounts to meet your security requirements. AWS services, such as GuardDuty, Security Hub, and AWS Config, support integration with AWS Organizations, including assigning a specific account for administrative functions. "
 },
 {
-	"uri": "//localhost:1313/4-wellarchitecture/4.2-security_pillar/",
+	"uri": "/4-wellarchitecture/4.2-security_pillar/",
 	"title": "Application security",
 	"tags": [],
 	"description": "",
 	"content": "Application security (AppSec) describes the overall process of how you design, build, and test the security properties of the workloads you develop. You should have appropriately trained people in your organization, understand the security properties of your build and release infrastructure, and use automation to identify security issues.\nAdopting application security testing as a regular part of your software development lifecycle (SDLC) and post release processes help ensure that you have a structured mechanism to identify, fix, and prevent application security issues entering your production environment.\nYour application development methodology should include security controls as you design, build, deploy, and operate your workloads. While doing so, align the process for continuous defect reduction and minimizing technical debt. For example, using threat modeling in the design phase helps you uncover design flaws early, which makes them easier and less costly to fix as opposed to waiting and mitigating them later.\nThe cost and complexity to resolve defects is typically lower the earlier you are in the SDLC. The easiest way to resolve issues is to not have them in the first place, which is why starting with a threat model helps you focus on the right outcomes from the design phase. As your AppSec program matures, you can increase the amount of testing that is performed using automation, improve the fidelity of feedback to builders, and reduce the time needed for security reviews. All of these actions improve the quality of the software you build, and increase the speed of delivering features into production.\n"
 },
 {
-	"uri": "//localhost:1313/2-prerequiste/2.1-architecture/2.1.2-createtglb/",
+	"uri": "/2-prerequiste/2.1-architecture/2.1.2-createtglb/",
 	"title": "Create Target Group, Load Balancer",
 	"tags": [],
 	"description": "",
 	"content": "Create Target Group Search EC2 -\u0026gt; go down to Load Balancer and select create Target group\nTarget group configuration settings are as follows:\nChoose a target type: select Instances\nTarget group name: TG1 VPC section: Select ASG-ALB-vpc We keep the remaining parts unchanged and click next and create\nCreate Load Balancer Search EC2 -\u0026gt; go to Load Balancer\nIn the Load balancer types section: Select Application Load Balancer and click Create Name it ALB1 Network mapping section:\nSelect VPC as ASG-ALB-vpc Select 2 Availability Zones, then select 2 public subnets In the Security group section, delete the default security group and select ALB-1 In the Listeners and routing section, select Default action as TG-1 Note: The load balancer periodically sends pings, connection attempts, or requests to test the EC2 instance. These tests are called health checks.\nLeave the rest as default and click Create Load Balancer Note: We must specify the availability zones for which the load balancer needs to be enabled, causing it to only route traffic to the two targets launched in those availability zones. You must include subnets from at least two Availability zones to make our load balancer Highly-Available.\n"
 },
 {
-	"uri": "//localhost:1313/4-wellarchitecture/4.2-security_pillar/4.2.2-identity_and_access_management/",
+	"uri": "/4-wellarchitecture/4.2-security_pillar/4.2.2-identity_and_access_management/",
 	"title": "Identity and access management",
 	"tags": [],
 	"description": "",
 	"content": "\rTo use AWS services, you must grant users and applications access to resources in your AWS account. As you run more workloads on AWS, you need strong identity management and permissions in place to ensure that the right people have access to the right resources under the right conditions. AWS offers a wide selection of capabilities to help you manage human and machine identities and their permissions. Best practices for these capabilities fall into two main areas:\nIdentity management There are two types of identities you need to manage when approaching secure AWS workload operations.\nHuman identity: Your application administrators, developers, operators, and consumers require identities to access your AWS applications and environments. This can be a member of your organization or an external user that you collaborate with and interact with your AWS resources through a web browser, client application, mobile application, or interactive command line tool .\nMachine identity: Your workload applications, operations engines, and components require identity to make requests to AWS services, such as to read data. These identities include machines running in your AWS environment, such as Amazon EC2 instances or AWS Lambda functions. You can also manage machine identities for external parties that need access. Additionally, you may also have machines outside of AWS that need access to your AWS environment.\nPermissions management Manage permissions to control access to human and machine identities that request access to AWS and your workloads. Control over who can access what and under what conditions. Set permissions for specific human and machine identities to grant access to specific service actions on specific resources. For example, you can allow developers to create new Lambda functions, but only in a specific Region.\nThere are several ways to grant access to different types of resources. One way is to use different types of policies.\nResource-based policies Permissions boundaries Attribute-based access control (ABAC) Organizations service control policies (SCP) Session policies "
 },
 {
-	"uri": "//localhost:1313/2-prerequiste/",
+	"uri": "/2-prerequiste/",
 	"title": "Preparation ",
 	"tags": [],
 	"description": "",
 	"content": "\rThis workshop requires you to have basic knowledge about VPC, EC2, public/private subnet to perform this exercise.\nTo learn how to create EC2 instances and VPCs with public/private subnet, you can refer to the lab article:\nIntroduction to Amazon EC2 Works with Amazon VPC Content System diagram, architecture implementation "
 },
 {
-	"uri": "//localhost:1313/4-wellarchitecture/4.1-operational_excellence_pillar/4.1.2-prepare/",
+	"uri": "/4-wellarchitecture/4.1-operational_excellence_pillar/4.1.2-prepare/",
 	"title": "Prepare Area",
 	"tags": [],
 	"description": "",
 	"content": "General information of Prepare Area that I summarized Effective workload design: Build workloads that provide complete information and are easy to observe and investigate. Enhanced visibility: Monitor and analyze data to detect problems early and make data-based decisions. Improve change flow: Quickly deploy changes, minimize risk, and recover quickly when problems occur. Ensure operational readiness: Check carefully before deployment, have clear procedures and complete documents. Use AWS to manage workloads: CloudFormation enables you to have consistent, templated development, test, and production environments with increased operational control. "
 },
 {
-	"uri": "//localhost:1313/3-cleanup/",
+	"uri": "/3-cleanup/",
 	"title": "Clean up resources",
 	"tags": [],
 	"description": "",
 	"content": "We\u0026rsquo;ll take the following steps to delete the resources we created in this exercise.\nDelete Auto Scaling Group Go to EC2 service administration console Scroll down to the bottom and select Auto Scaling Groups Select MyASG Click Actions Click Delete In the confirm box, fill in the information to confirm deletion Delete Load Balancer Go to EC2 service administration console Scroll down and select Load Balancers Select ALB1 Click Actions Click Delete load balancer In the confirm box, fill in the information to confirm deletion Delete Launch Template Go to EC2 service administration console Scroll down and select Launch Templates Select MyLT1 Click Actions Click Delete template In the confirm box, fill in the information to confirm deletion Delete Target Group Go to EC2 service administration console Scroll down and select Target Groups Select TG1 Click Actions Click Deleter In the confirm box, fill in the information to confirm deletion Delete VPC Access the VPC service administration interface Click Your VPCs. Click to select ASG-ALB-vpc. Click Actions. Click Delete VPC. In the confirm box, enter delete to confirm, click Delete to delete Lab VPC and related resources. "
 },
 {
-	"uri": "//localhost:1313/2-prerequiste/2.1-architecture/2.1.3-createlt/",
+	"uri": "/2-prerequiste/2.1-architecture/2.1.3-createlt/",
 	"title": "Create Launch Template",
 	"tags": [],
 	"description": "",
 	"content": "Create Launch Template In the left navigation pane (scroll down) under Instances, click Launch templates.\nClick the Create launch template button.\nIn the Launch template name and description section:\nLaunch template name: Enter LT1 Leave other options as default In Launch template contents: Select Amazon Linux from Quick Start Amazon machine Amazon (AMI): Select Amazon Linux 2023 AMI In the Instance type section: Select t2.micro from the list below Key pair (Login): Select Keep it as default\nSecurity groups: Select Web-1 from the list Leave all other options as default. Expand the Advanced details option, Go to User data and paste the script below:\n#!/bin/bash\rsudo su\ryum update -y\ryum install -y httpd\rsystemctl start httpd\rsystemctl enable httpd\recho \u0026#34;\u0026lt;html\u0026gt; \u0026lt;h1\u0026gt; Hello, this is my First Workshop!! \u0026lt;/h1\u0026gt; \u0026lt;/html\u0026gt;\u0026#34; \u0026gt; /var/www/html/index.html To create, click the Create launch template button. After successful creation, it will create Launch template. "
 },
 {
-	"uri": "//localhost:1313/4-wellarchitecture/4.2-security_pillar/4.2.3-detection/",
+	"uri": "/4-wellarchitecture/4.2-security_pillar/4.2.3-detection/",
 	"title": "Detection",
 	"tags": [],
 	"description": "",
 	"content": "\rDetection allows you to identify a potential security misconfiguration, threat, or unexpected behavior. It’s an essential part of the security lifecycle and can be used to support a quality process, a legal or compliance obligation, and for threat identification and response efforts.\nDetection consists of two parts: detection of unexpected or unwanted configuration changes, and the detection of unexpected behavior. The first can take place at multiple places in an application delivery lifecycle. Using infrastructure as code (for example, a CloudFormation template), you can check for unwanted configuration before a workload is deployed by implementing checks in the CI/CD pipelines or source control. Then, as you deploy a workload into non-production and production environments, you can check configuration using native AWS, open source, or AWS Partner tools.\nFor the second part of detection, unexpected behavior, you can use tools or by alerting on an increase in a particular type of API call. Using Amazon GuardDuty, you can be alerted when unexpected and potentially unauthorized or malicious activity occurs within your AWS accounts. You should also explicitly monitor for mutating API calls that you would not expect to be used in your workload, and API calls that change the security posture.\n"
 },
 {
-	"uri": "//localhost:1313/4-wellarchitecture/4.1-operational_excellence_pillar/4.1.3-operate/",
+	"uri": "/4-wellarchitecture/4.1-operational_excellence_pillar/4.1.3-operate/",
 	"title": "Operate Area",
 	"tags": [],
 	"description": "",
 	"content": "\rIn AWS, you can create dashboard views of metrics collected from your workloads and from AWS. You can leverage CloudWatch or third-party applications to aggregate and present business-level views of operational activities, workloads, and activities. AWS provides workload insights through logging capabilities including AWS X-Ray, CloudWatch, CloudTrail, and VPC Flow Logs to identify workload issues to support Supports root cause analysis and remediation.\nObservability allows you to focus on meaningful data and understand workload interactions and outputs. By focusing on essential insights and eliminating unnecessary data, you maintain a simple approach to understanding workload performance. It is necessary not only to collect data but also to interpret it correctly.\nEffective and efficient management of operational events is necessary to achieve operational excellence. Prioritize responses to events based on their impact on the business and customers. Verify that if an alert is raised in response to an event, there is an associated process to run with a specifically identified owner.\nCommunicate the operational status of workloads through dashboards and notifications tailored to target audiences (e.g. customers, business, developers, operations) so they can take appropriate action, manage their expectations, and be notified when normal operations return.\n"
 },
 {
-	"uri": "//localhost:1313/4-wellarchitecture/4.3-reliability_pillar/",
+	"uri": "/4-wellarchitecture/4.3-reliability_pillar/",
 	"title": "Reliability Pillar",
 	"tags": [],
 	"description": "",
 	"content": "The reliability pillar encompasses the ability of a workload to perform its intended function correctly and consistently when it’s expected to. This includes the ability to operate and test the workload through its total lifecycle.\nShared Responsibility Model for Resiliency Resiliency is a shared responsibility between AWS and you. It is important that you understand how disaster recovery (DR) and availability, as part of resiliency, operate under this shared model.\nThere are four best practice areas for operational excellence in the cloud: Networking, quotas, and constraints Change management and operational resilience Observability and failure management Workload architecture Continuous testing of critical infrastructure\n"
 },
 {
-	"uri": "//localhost:1313/2-prerequiste/2.1-architecture/2.1.4-createasg/",
+	"uri": "/2-prerequiste/2.1-architecture/2.1.4-createasg/",
 	"title": "Create Auto Scaling Group",
 	"tags": [],
 	"description": "",
 	"content": "Create Auto Scaling group Search EC2 , scroll down to Auto Scaling group to create a new one\nSection Name , enter MyASG\nIn Launch Template, select MyLT1 and click Next In Network section, select VPC as ASG-ALB-vpc and select 2 public subnets and click next Select Attach to an existing load balancer\nIn the Attach to an existing load balancer section below, select Choose from your load balancer target group\nSelect TG1 Leave the rest as default and select Next\nIn the Group size section, set Desired capacity to 2\nIn the Scaling section:\nMin desired capacity : 2 Max desired capacity : 4 In the Automatic scaling section, select Target tracking scaling policy Leave the rest as default and select Next Here we will use the SNS service to send notifications via email\nWe choose Add notification\nWe name the topic my-topic In the with these recipients section, we type the email address Event types , we select all Click Next Immediately after that you can see an email from AWS sent to confirm, click on the link Confirm subscription Leave the rest as default and then create the file. We will have to wait a few minutes for the Auto Scaling group to create EC2s and check their status.\nCheck the status of Load balancers Search EC2 -\u0026gt; Find Load Balancer and select ALB-1\nFind the Resource map - new section below, we can see that the Instances created by the Auto Scaling group all have the status Healthy Switch to the Details tab next to it, scroll down and click copy DNS name and paste it into the browser, we will get: "
 },
 {
-	"uri": "//localhost:1313/4-wellarchitecture/4.1-operational_excellence_pillar/4.1.4-evolve/",
+	"uri": "/4-wellarchitecture/4.1-operational_excellence_pillar/4.1.4-evolve/",
 	"title": "Evolve Area",
 	"tags": [],
 	"description": "",
 	"content": "\rOn AWS, you can export your log data to Amazon S3 or send logs directly to Amazon S3 for long-term storage. Using AWS Glue, you can discover and prepare your log data in Amazon S3 for analysis and store related metadata in AWS Glue Data Catalog. Amazon Athena, through native integration with AWS Glue, can then be used to analyze your log data, querying it using standard SQL. Using business intelligence tools like Amazon QuickSight, you can visualize, explore, and analyze your data. Discover trends and events of interest that can drive improvements.\nLearn, share and continuously improve to maintain operational excellence. Dedicate work cycles to making near-continuous incremental improvements. Perform post-incident analysis on all customer impact events. Identify contributing factors and preventative actions to limit or prevent recurrence. Communicate contributing factors with affected communities as appropriate. Regularly evaluate and prioritize improvement opportunities (e.g. feature requests, troubleshooting, and compliance requirements), including workload and operational processes. Successful progress of operations is built on: regular small improvements; provide a safe environment and time to experiment, develop and test innovations; and an environment that encourages learning from failures. Operational support for sandbox, development, test, and production environments, with increasing levels of operational control, facilitates development and increases the predictability of successful outcomes from changes made deployed into production.\n"
 },
 {
-	"uri": "//localhost:1313/4-wellarchitecture/4.2-security_pillar/4.2.4-infrastructure_protection/",
+	"uri": "/4-wellarchitecture/4.2-security_pillar/4.2.4-infrastructure_protection/",
 	"title": "Infrastructure protection",
 	"tags": [],
 	"description": "",
 	"content": "Infrastructure protection encompasses control methodologies, such as defense in depth, that are necessary to meet best practices and organizational or regulatory obligations. Use of these methodologies is critical for successful, ongoing operations in the cloud.\nInfrastructure protection is a key part of an information security program. It ensures that systems and services within your workload are protected against unintended and unauthorized access, and potential vulnerabilities. For example, you’ll define trust boundaries (for example, network and account boundaries), system security configuration and maintenance (for example, hardening, minimization and patching), operating system authentication and authorizations (for example, users, keys, and access levels), and other appropriate policy-enforcement points (for example, web application firewalls and/or API gateways).\nRegions, Availability Zones, AWS Local Zones, and AWS Outposts\nthere are 2 approaches to infrastructure protection Protecting networks Users, both in your workforce and your customers, can be located anywhere. You need to pivot from traditional models of trusting anyone and anything that has access to your network. When you follow the principle of applying security at all layers, you employ a Zero Trust approach. Zero Trust security is a model where application components or microservices are considered discrete from each other and no component or microservice trusts any other.\nThe careful planning and management of your network design forms the foundation of how you provide isolation and boundaries for resources within your workload. Because many resources in your workload operate in a VPC and inherit the security properties, it’s critical that the design is supported with inspection and protection mechanisms backed by automation.\nProtecting compute Compute resources include EC2 instances, containers, AWS Lambda functions, database services, IoT devices, and more. Each of these compute resource types require different approaches to secure them. However, they do share common strategies that you need to consider: defense in depth, vulnerability management, reduction in attack surface, automation of configuration and operation, and performing actions at a distance. In this section, you will find general guidance for protecting your compute resources for key services. For each AWS service used, it’s important for you to check the specific security recommendations in the service documentation.\n"
 },
 {
-	"uri": "//localhost:1313/4-wellarchitecture/4.4-performance_efficiency_pillar/",
+	"uri": "/4-wellarchitecture/4.4-performance_efficiency_pillar/",
 	"title": "Performance Efficiency Pillar",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "//localhost:1313/4-wellarchitecture/",
+	"uri": "/4-wellarchitecture/",
 	"title": "What is Well-Architecture ?",
 	"tags": [],
 	"description": "",
 	"content": "Framework Overview The AWS Well-Architected Framework describes key concepts, design principles, and architectural best practices for designing and running workloads in the cloud.\nContent of 6 Well-Architecture Pillar Operational Excellence Pillar Security Pillar Reliability Pillar (Updating) Performance Efficiency Pillar (Updating) Cost Optimization Pillar (Updating) Sustainability Pillar (Updating) You can read more in the official AWS documentation Official AWS documentation "
 },
 {
-	"uri": "//localhost:1313/4-wellarchitecture/4.1-operational_excellence_pillar/4.1.5-conclusion/",
+	"uri": "/4-wellarchitecture/4.1-operational_excellence_pillar/4.1.5-conclusion/",
 	"title": "Conclusion",
 	"tags": [],
 	"description": "",
 	"content": "Conclusion Operational excellence is an ongoing and iterative effort.\nSet up your organization for success by having shared goals. Ensure that everyone understands their part in achieving business outcomes and how they impact the ability of others to succeed. Provide support for your team members so that they can support your business outcomes.\nEvery operational event and failure should be treated as an opportunity to improve the operations of your architecture. By understanding the needs of your workloads, predefining runbooks for routine activities, and playbooks to guide issue resolution, using the operations as code features in AWS, and maintaining situational awareness, your operations will be better prepared and able to respond more effectively when incidents occur.\nThrough focusing on incremental improvement based on priorities as they change, and lessons learned from event response and retrospective analysis, you will help the success of your business by increasing the efficiency and effectiveness of your activities.\nAWS strives to help you build and operate architectures that maximize efficiency while you build highly responsive and adaptive deployments. To increase the operational excellence of your workloads, you should use the best practices discussed in this paper.\n"
 },
 {
-	"uri": "//localhost:1313/4-wellarchitecture/4.5-cost_optimization_pillar/",
+	"uri": "/4-wellarchitecture/4.5-cost_optimization_pillar/",
 	"title": "Cost Optimization Pillar",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "//localhost:1313/2-prerequiste/2.1-architecture/2.1.5-createwacl/",
+	"uri": "/2-prerequiste/2.1-architecture/2.1.5-createwacl/",
 	"title": "Create IP sets, Web ACLS",
 	"tags": [],
 	"description": "",
 	"content": "Create IP sets Search WAF \u0026amp; Shield , select IP sets Click the Create IP sets button In IP set details section: IP set name: enter MYIpSet Description: enter IP set to block my public IP Region: Select Singapore In the IP addresses section, we need to visit https://www.whatismyip.com/ and copy the ipv4 address and add /32 (eg 1.2.3.4/32) Click the Create IP set button Create Web ACLs Click the Create web ACL button In the Web ACL details section: Resource type : Select Regional resources Region: Select Singapore Name : MyWebACL Description: You can not fill it out In the Associated AWS resources section: Select the Add AWS resources button In the Resource type section, select Application Load Balancer and select ALB1 below -\u0026gt; Click Add Then click Next In the Rules section, select Add rules and select Add my own rules and rule groups\nSelect Rule type as IP set , name Rule\nIn the Ip set section, select the MyIpSet just created earlier Leave all the rest as default and create Web ACL then\nWait a few minutes and F5 the browser again with the url as DNS of the Load Balancer we opened earlier, you can see we have blocked our own IP and it worked, you can install a few extensions to change IP and test again\n"
 },
 {
-	"uri": "//localhost:1313/4-wellarchitecture/4.2-security_pillar/4.2.5-data_protection/",
+	"uri": "/4-wellarchitecture/4.2-security_pillar/4.2.5-data_protection/",
 	"title": "Data Protection",
 	"tags": [],
 	"description": "",
 	"content": "Before architecting any workload, foundational practices that influence security should be in place. For example, data classification provides a way to categorize data based on levels of sensitivity, and encryption protects data by way of rendering it unintelligible to unauthorized access. These methods are important because they support objectives such as preventing mishandling or complying with regulatory obligations.\nIn AWS, there are a number of different approaches you can use when addressing data protection :\nData classification Data classification provides a way to categorize organizational data based on criticality and sensitivity in order to help you determine appropriate protection and retention controls.\nProtecting data at rest Data at rest represents any data that you persist in non-volatile storage for any duration in your workload. This includes block storage, object storage, databases, archives, IoT devices, and any other storage medium on which data is persisted. Protecting your data at rest reduces the risk of unauthorized access, when encryption and appropriate access controls are implemented.\nEncryption and tokenization are two important but distinct data protection schemes.\nTokenization is a process that allows you to define a token to represent an otherwise sensitive piece of information (for example, a token to represent a customer’s credit card number). A token must be meaningless on its own, and must not be derived from the data it is tokenizing–therefore, a cryptographic digest is not usable as a token. By carefully planning your tokenization approach, you can provide additional protection for your content, and you can ensure that you meet your compliance requirements. For example, you can reduce the compliance scope of a credit card processing system if you leverage a token instead of a credit card number.\nEncryption is a way of transforming content in a manner that makes it unreadable without a secret key necessary to decrypt the content back into plaintext. Both tokenization and encryption can be used to secure and protect information as appropriate. Further, masking is a technique that allows part of a piece of data to be redacted to a point where the remaining data is not considered sensitive. For example, PCI-DSS allows the last four digits of a card number to be retained outside the compliance scope boundary for indexing.\nProtecting data in transit Data in transit is any data that is sent from one system to another. This includes communication between resources within your workload as well as communication between other services and your end users. By providing the appropriate level of protection for your data in transit, you protect the confidentiality and integrity of your workload’s data.\nSecure data from between VPC or on-premises locations: You can use AWS PrivateLink to create a secure and private network connection between Amazon Virtual Private Cloud (Amazon VPC) or on-premises connectivity to services hosted in AWS. You can access AWS services, third-party services, and services in other AWS accounts as if they were on your private network. With AWS PrivateLink, you can access services across accounts with overlapping IP CIDRs without needing an Internet Gateway or NAT. You also do not have to configure firewall rules, path definitions, or route tables. Traffic stays on the Amazon backbone and doesn’t traverse the internet, therefore your data is protected. You can maintain compliance with industry-specific compliance regulations, such as HIPAA and EU/US Privacy Shield. AWS PrivateLink seamlessly works with third-party solutions to create a simplified global network, allowing you to accelerate your migration to the cloud and take advantage of available AWS services.\n"
 },
 {
-	"uri": "//localhost:1313/4-wellarchitecture/4.2-security_pillar/4.2.6-incident_response/",
+	"uri": "/4-wellarchitecture/4.2-security_pillar/4.2.6-incident_response/",
 	"title": "Incident response",
 	"tags": [],
 	"description": "",
 	"content": "Even with mature preventive and detective controls, your organization should implement mechanisms to respond to and mitigate the potential impact of security incidents. Your preparation strongly affects the ability of your teams to operate effectively during an incident, to isolate, contain and perform forensics on issues, and to restore operations to a known good state. Putting in place the tools and access ahead of a security incident, then routinely practicing incident response through game days, helps ensure that you can recover while minimizing business disruption.\nTopics\nAspects of AWS incident response Design goals of cloud response Preparation Operations Post-incident activity "
 },
 {
-	"uri": "//localhost:1313/2-prerequiste/2.1-architecture/2.1.6-createcwatch/",
+	"uri": "/2-prerequiste/2.1-architecture/2.1.6-createcwatch/",
 	"title": "Read Metric with CloudWatch",
 	"tags": [],
 	"description": "",
 	"content": "Create CloudWatch Search for CloudWatch, select Dashboard and click Create dashboard, name yourself Dashboard name and click Create dashboard Select Data type as Metrics and Widget type as Line In Browse section, Select EC2 -\u0026gt; Select By Auto Scaling Group -\u0026gt; Find the item with Metric name as CPUUtilization and click Create Widgets Let\u0026rsquo;s read the metrics together :v "
 },
 {
-	"uri": "//localhost:1313/4-wellarchitecture/4.6-sustainability_pillar/",
+	"uri": "/4-wellarchitecture/4.6-sustainability_pillar/",
 	"title": "Sustainability Pillar",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "//localhost:1313/4-wellarchitecture/4.2-security_pillar/4.2.7-application_security/",
+	"uri": "/4-wellarchitecture/4.2-security_pillar/4.2.7-application_security/",
 	"title": "Organization Area",
 	"tags": [],
 	"description": "",
 	"content": "General information of the Organization Area that I summarized Prioritization and identification of needs Understand the work: Teams need to clearly understand their work, common goals and each member\u0026rsquo;s role to set effective priorities. Assess customer needs: Need to clearly identify customer needs (internal and external) to focus on the most important things. Regulatory Compliance: Teams need to comply with organizational and industry regulations and standards. Regularly evaluate: Need to regularly reevaluate priorities to match changing needs. Risk management Identify risks: Identify and evaluate potential risks that may affect the business. Weigh benefits and risks: Carefully consider the benefits and risks when making a decision. Risk management: There are measures to manage and minimize risks. Understand roles and responsibilities Understand roles: Each group needs to clearly understand their role in achieving the organization\u0026rsquo;s common goals. Teamwork: Teams need to cooperate and support each other to achieve the highest efficiency. Flexibility: There is no single working model that fits all teams. "
 },
 {
-	"uri": "//localhost:1313/categories/",
+	"uri": "/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "//localhost:1313/tags/",
+	"uri": "/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",
