@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Infrastructure protection on AWS System Manager</title>
-    <link>https://dinhlam310.github.io/AWS-Workshop-1/vi/4-wellarchitecture/4.2-security_pillar/4.2.4-infrastructure_protection/</link>
+    <link>https://dinhlam310.github.io/vi/4-wellarchitecture/4.2-security_pillar/4.2.4-infrastructure_protection/</link>
     <description>Recent content in Infrastructure protection on AWS System Manager</description>
     <generator>Hugo</generator>
     <language>vi</language>
-    <atom:link href="https://dinhlam310.github.io/AWS-Workshop-1/vi/4-wellarchitecture/4.2-security_pillar/4.2.4-infrastructure_protection/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dinhlam310.github.io/vi/4-wellarchitecture/4.2-security_pillar/4.2.4-infrastructure_protection/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
