@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Evolve Area on AWS System Manager</title>
-    <link>https://dinhlam310.github.io/4-wellarchitecture/4.1-operational_excellence_pillar/4.1.4-evolve/</link>
+    <link>https://dinhlam310.github.io/workshop1.github.io/4-wellarchitecture/4.1-operational_excellence_pillar/4.1.4-evolve/</link>
     <description>Recent content in Evolve Area on AWS System Manager</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="https://dinhlam310.github.io/4-wellarchitecture/4.1-operational_excellence_pillar/4.1.4-evolve/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dinhlam310.github.io/workshop1.github.io/4-wellarchitecture/4.1-operational_excellence_pillar/4.1.4-evolve/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
